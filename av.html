@@ -51,6 +51,10 @@
 				alert("Please provide a valid Phone Number!");
 				document.myForm.number.focus();
 				return false;
+			}  if(document.myForm.number.value.length!=1 || isNaN(document.myForm.number.value)){
+				alert("Please provide a valid age!");
+				document.myForm.number.focus();
+				return false;
 			}
 			alert("Submission Successfull!");
 		}
